@@ -9,27 +9,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="header_grid-container">
-        <div id="item-1">
-            <h1>ECO</h1>
-        </div>
-        <nav id="item-2">
-            <a href="#">#</a>
-            <a href="#">#</a>
-            <a href="#">#</a>
-            <a href="#">#</a>
-            <a href="#">#</a>
-        </nav>
-        <nav id="item-3" class="dropdown">
-            <a href="">#</a>
-            <div class="dropdown-content">
-                <a href="">#</a>
-                <a href="">#</a>
-                <a href="">#</a>
-                <a href="">#</a>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <!-- Company logo with alt and title attributes for screen readers and SEO -->
+    <img src="logo.png" alt="Logo" title="Company Name">
+
+    <nav>
+      <ul>
+        <!-- Menu items with aria-label attribute for screen readers -->
+        <li><a href="#" aria-label="Shopping Cart">Shopping Cart</a></li>
+        <li><a href="#" aria-label="About Us">About</a></li>
+        <li><a href="#" aria-label="Contact Us">Contact</a></li>
+
+        <!-- Dropdown menu item with aria-haspopup and aria-expanded attributes for screen readers -->
+        <li class="dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Dropdown 1</a></li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Company Name</h1>
+    <h2>Welcome to Our Website</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut tincidunt risus. Nullam congue feugiat ante, id finibus magna fringilla in. Sed aliquam, tortor sed venenatis aliquet, dolor risus commodo eros, non vestibulum orci sapien et libero.</p>
+    <h2>Our Products</h2>
+    <ul>
+      <li>Product 1</li>
+      <li>Product 2</li>
+      <li>Product 3</li>
+    </ul>
+  </main>
+</body>
+</html>
+
+
     <script src="index.js"></script>
 </body>
 </html>
